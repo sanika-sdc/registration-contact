@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Two Forms in One Div</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+        }
+        .main-div {
+            width: 700px;
+            margin: 40px auto;
+            display: flex;
+            gap: 20px;
+        }
+         label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+         }    
+        form {
+            background: #fff;
+            padding: 20px;
+            width: 50%;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        input, textarea, button {
+            width: 100%;
+            padding: 7px;
+            margin: 7px 0;
+        }
+        button {
+            background: #11c108;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="main-div">
+
+    <!-- Contact Form -->
+    <form>
+        <h2>Contact Form</h2>
+        <label>Full Name</label>
+        <input type="text" placeholder="Your Name" required>
+        <label>Email</label>
+        <input type="email" placeholder="Your Email" required>
+        <label>Message</label>
+        <textarea placeholder="Your Message" rows="4"></textarea>
+        <button type="submit">Send</button>
+    </form>
+
+    <!-- Registration Form -->
+    <form>
+        <h2>Registration Form</h2>
+        <label>Full Name</label>
+        <input type="text" placeholder="Username" required>
+         <label>Email</label>
+        <input type="email" placeholder="Email" required>
+        <label>Password</label>
+        <input type="password" placeholder="Password" required>
+        <label>Confirm Password</label>
+        <input type="password" placeholder="Confirm Password" required>
+        <button type="submit">Register</button>
+    </form>
+
+</div>
+
+</body>
+</html>
